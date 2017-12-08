@@ -23,7 +23,6 @@ body{
     grid-template-columns: 90px 50px 120px;
     /*display: none;*/
     width: 1000px;
-    height: 680px;
     border-radius: 20px;
     margin: 0 auto;
     background-color: rgba(142, 222, 222, 0.3);
@@ -222,10 +221,12 @@ body{
 .sum{
     width: 30px;
     color: #7c74d0;
+    height: 20px;
 }
 .login{
     background: rgba(90, 251, 228, 0.56);
     color: #af8c56;
+    height: 20px;
 }
 .td_top{
     /*display: inline-block;*/

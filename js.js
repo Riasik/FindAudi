@@ -5,9 +5,9 @@ var appendTens = document.getElementById("tens"),
 //vars for game logic
 var userMass = [], resultsArray = [],wrongChoice = 0,level = 0,
     userNum, count = 0, sizeDesk = 12,
-    car_logo = ["alfa", "audi", "bmw", "chevrolet", "citroen", "ferrari", "fiat", "ford", "honda",
+    car_logo = ["alfa", "audi", "bmw", "chevrolet", "citroen", "fiat", "ford", "honda",
     "hyundai", "infiniti", "jaguar", "jeep","kia", "lancia", "land", "lexus", "mazda",
-    "mercedes", "mg", "mini", "mitsubishi", "nissan", "opel", "peugeot", "porsche",
+    "mercedes", "mg", "mini", "mitsubishi", "nissan", "opel", "peugeot",
     "renault", "seat", "skoda", "subaru", "toyota", "volkswagen", "volvo"];
 //vars for style
 var wrongChoiceH = document.getElementById('wrong_choice'),
