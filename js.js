@@ -167,8 +167,8 @@ function pointsAdd() {
         totalPoints;
     identefySizeDesk().push(points);
     totalPoints = identefySizeDesk();
-    levelPointsH.innerHTML = 'Level points '+ points;
-    totalPointsH.innerHTML = 'Total points '+ totalPoints;
+    levelPointsH.innerHTML = 'Level points : '+ points;
+    totalPointsH.innerHTML = 'Total points : '+ totalPoints;
     localStorage.setItem('BD',JSON.stringify(userMass));
 }
 // Sum points in mass
@@ -277,8 +277,11 @@ function showAllResults() {
     }
     tbody = document.createElement('tbody');
     var tr = document.createElement('tr');
-    tr.innerHTML = '<td> USER </td><td> 6 x 6 </td><td> SUM </td><td> 8 x 8 </td>' +
-        '<td> SUM </td><td> 10 x 10 </td><td> SUM </td><td> 12 x 12 </td><td> SUM </td>';
+    tr.innerHTML = '<td class="td_top"> USER </td><td class="td_top"> 6 x 6 </td>' +
+        '<td class="td_top"> SUM </td><td class="td_top"> 8 x 8 </td>' +
+        '<td class="td_top"> SUM </td><td class="td_top"> 10 x 10 </td>' +
+        '<td class="td_top"> SUM </td><td class="td_top"> 12 x 12 </td>' +
+        '<td class="td_top"> SUM </td>';
     tbody.appendChild(tr);
 
     var items = ['login', 'desk12','total12', 'desk16','total16', 'desk20','total20', 'desk24','total24'];

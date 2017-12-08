@@ -41,7 +41,7 @@ body{
 .show_desk {
     display: block;
     height: 210px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .container{
     width: 960px;
@@ -228,20 +228,18 @@ body{
     color: #af8c56;
 }
 .td_top{
-    display: inline-block;
+    /*display: inline-block;*/
     color: white;
-    text-decoration: none;
     padding: .5em 2em;
-    width: 165px;
+    /*width: 165px;*/
+    height: 20px;
     outline: none;
     border-width: 2px 0;
     border-style: solid none;
-    border-color: #FDBE33 #000 #b18d67;
     border-radius: 6px;
     background: linear-gradient(#F3AE0F, #E38916) #E38916;
     transition: 0.2s;
     margin-bottom: 10px;
-    color: #1f2527;
     text-shadow: 1px 1px 1px #dac885;
 }
 
