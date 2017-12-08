@@ -31,7 +31,7 @@ body{
 .wrap_styles {
     display: block;
     width: 1080px;
-    height: 840px;
+    height: 900px;
     border-radius: 20px;
     margin: 0 auto;
     background-color: #886c44c2;
@@ -199,7 +199,7 @@ body{
     background-size: 100%;
 
 }
-.wrap--new--style_property{
+.wrapH--new--style_property{
     background-color: #403b34c2;
 }
 .new--bg_cards{
@@ -222,7 +222,6 @@ body{
     width: 30px;
     color: #7c74d0;
     height: 20px;
-    text-align: center;
 }
 .login{
     background: rgba(90, 251, 228, 0.56);
