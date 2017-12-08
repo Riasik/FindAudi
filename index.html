@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find the car</title>
+
+  <link rel="stylesheet" href="css.css">
+
+</head>
+<body>
+<!-- Window desk results-->
+<div class="wrap wrap_styles_table">
+    <button class="come--back_btn" onclick="showMainsDesk()">come back</button>
+    <table class="con_all--results" id="desk_all_results"></table>
+    </div>
+  </div>
+<!-- Window registration-->
+<div class="fixed_div" id="fixed_div_id">
+    <div class="cont">
+    <!-- Form sing in-->
+      <div class="form sign-in">
+        <h2>Welcome back</h2>
+        <label>
+          <span>login</span>
+          <input type="email" id="login_in"/>
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" id="password_in"/>
+        </label>
+        <button id="btn_sing-in" onclick="onClickSingIn()" type="button" class="submit">Sign In</button>
+        <button id="btn_without" onclick="onClickWithout()" type="button" class="submit_with">Without Registration</button>
+      </div>
+      <div class="sub-cont">
+        <div class="img">
+          <div class="img__text m--up">
+            <h3>New here?</h3>
+            <p>Sign up and discover great amount of new opportunities our cool game <br>"Find the Audi !</p>
+          </div>
+          <div class="img__text m--in">
+            <h3>One of us?</h3>
+            <p>If you already has an account, just sign in. <br>We've waited you!</p>
+          </div>
+          <div class="img__btn">
+            <span class="m--up">Sign Up</span>
+            <span class="m--in">Sign In</span>
+          </div>
+        </div>
+        <!-- Form sing up-->
+        <div class="form sign-up">
+          <h2>Time to feel like home</h2>
+          <label>
+            <span>Login</span>
+            <input type="email" id="login"/>
+          </label>
+          <label>
+            <span>Password</span>
+            <input type="password" id="password"/>
+          </label>
+          <button id="btn_sing-up" onclick="onClickSingUp()" type="button" class="submit">Sign Up</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="wrap wrap_styles">
+<!-- Notification last level time-->
+    <div class="wrap_results--text"><h3 id="results--text"></h3></div>
+
+    <div class="show show_desk">
+        <div class="show__left_float level--desk">
+        <!-- Change sizeDesk-->
+              <select class="show__level-div show_change--desk" id = "spinnerDesk">
+                        <option value="12" selected="selected"> 6 x 6 </option>
+                        <option value="16" > 8 x 8 </option>
+                        <option value="20" > 10 x 10 </option>
+                        <option value="24" > 12 x 12 </option>
+              </select>
+              <!-- Logic vars in html-->
+              <div class="show__level-div" id="user"></div>
+              <div class="show__level-div" id="level"></div>
+              <div class="show__level-div" id="wrong_choice"></div>
+              <div class="show__level-div" id="level_points">Level points:</div>
+              <div class="show__level-div" id="total_points">Total points:</div>
+        </div>
+
+        <!--btn stop/play-->
+        <div class="show__count_btn--points">
+            <div class="show__btn button_stop_game">
+              <button  id="btn_stop" onclick="stopTimer()"> 
+                <img src="img/stop.png"></button>
+            </div>
+        
+            <div class="show__points text_points--level">
+              <p><span id="seconds">00</span><span class="colon">:</span><span id="tens">00</span></p>
+            </div>
+        </div>
+        <!-- buttons change style and change window results-->
+        <div class="show__rigth_buttons">
+          <button class="show__btn--results" onclick="showResultsDesk()">show results</button>
+          <button class="show__change_design" onclick="changeClassStyles ()">change design</button>
+        </div>
+  </div>
+  <!-- Container of cards-->
+    <div class="container" id="con">
+    </div>
+    <script src="js.js"></script>
+</div>
+</body>
+</html>
