@@ -235,7 +235,7 @@ function onClickSingIn() {
 // But whatever registers you in BD and give you last 'number' in BD
 // login: User(number) and login: number
 function onClickWithout() {
-    userMass.push(new User('user'+(userMass.length+1), userMass.length+1,
+    userMass.push(new User('User: '+(userMass.length+1), userMass.length+1,
         [],[],[],[]));
     document.getElementById('fixed_div_id').style.display = "none";
     userNum = userMass.length-1;

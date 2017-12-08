@@ -4,7 +4,6 @@
 }
 input, select,button {
     outline:none;
-    -webkit-appearance: none;
 }
 body{
     background: url(img/car_bg.jpg) no-repeat;
@@ -21,7 +20,6 @@ body{
 }
 .con_all--results{
     grid-template-columns: 90px 50px 120px;
-    /*display: none;*/
     width: 1000px;
     border-radius: 20px;
     margin: 0 auto;
@@ -35,17 +33,19 @@ body{
     border-radius: 20px;
     margin: 0 auto;
     background-color: #886c44c2;
-    padding: 30px;
+    padding: 10px 0px 60px 0px;
 }
 .show_desk {
     display: block;
-    height: 210px;
+    height: 240px;
     margin-bottom: 50px;
 }
-.container{
+.container {
     width: 960px;
     margin: 0 auto;
     border-radius: 18px;
+    text-align: ;
+    padding-left: 70px;
 }
 .show__count_btn--points {
     width: 593px;
@@ -62,6 +62,16 @@ body{
     font-size: 50px;
     color: #ffaf37;
 }
+.show__rigth_buttons {
+    display: inline;
+}
+.desk--for--points {
+    border: 2px solid #ce90304d;
+    border-radius: 10px;
+    background-color: #568cbb66;
+    box-shadow: 0 0 1em #ce9030e6;
+    width: 240px;
+}
 .show_change--desk{
     width: 130px;
     background-color: #568cbb8c;
@@ -69,6 +79,8 @@ body{
 }
 #spinnerDesk {
     padding-left: 23px;
+    border: 3px solid #9e8743;
+    box-shadow: 0 0 1em #ce9030e6;
 }
 .show__left_float {
     display: block;
@@ -76,9 +88,10 @@ body{
     margin-left: 59px;
 }
 .show__level-div {
-    font-size: 25px;
-    color: #d0bc5e;
-    padding: 3px;
+    font-size: 21px;
+    color: #c7b350;
+    padding: 4px 20px;
+    border: 1px solid #9e8743;
 }
 
 .show__btn--results, .show__change_design, .come--back_btn{
@@ -103,6 +116,12 @@ body{
 }
 .show__btn--results:active, .show__change_design:active, .come--back_btn:active { 
     background: linear-gradient(#f59500, #f5ae00) #f59500; 
+}
+.show--user {
+    color: #ffaf37e6;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
 }
 .button_stop_game{
     display: inline-block;
