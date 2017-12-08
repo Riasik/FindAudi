@@ -222,6 +222,7 @@ body{
     width: 30px;
     color: #7c74d0;
     height: 20px;
+    text-align: center;
 }
 .login{
     background: rgba(90, 251, 228, 0.56);
@@ -229,10 +230,8 @@ body{
     height: 20px;
 }
 .td_top{
-    /*display: inline-block;*/
     color: white;
-    padding: .5em 2em;
-    /*width: 165px;*/
+    text-align: center;
     height: 20px;
     outline: none;
     border-width: 2px 0;
